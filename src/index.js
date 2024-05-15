@@ -23,6 +23,7 @@ app.use(express.json())
 app.use(require('./routes/index'))
 
 
+
 //app.use(express.json());//permite analizar los cuerpos de las solicitudes entrantes en formato JSON.
 
 // Static
@@ -30,5 +31,10 @@ app.use(express.static("public"));//Estas líneas configuran los "middleware" de
 
 app.use('/img', express.static(path.join(__dirname, 'public/img')));
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
+
+
+app.get('/', (req, res) => {
+    res.render('index.ejs');
+  });
 
 

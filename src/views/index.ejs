@@ -2,33 +2,82 @@
 <html lang="en">
 
 <head>
-    <%-include('./templates/header.ejs')%>
+    <%- include('./templates/header.ejs') %>
 </head>
 
 <body>
-    <%-include('./navegation.ejs')%>
-        <div class="container-fluid ps-md-0">
-            <div class="row g-0">
-                <div class="d-none d-md-flex col-md-5 col-lg-6 bg-image" style="background-color: aquamarine;"></div>
-                <div class="col-md-5 col-lg-6">
-                    <div class="login d-flex align-items-center py-4"  >
-                        <div class="container"  >
-                            <div class="row" >
-                                <div class="col-md-10 col-lg-11 mx-auto" style="background-color: antiquewhite;">
-                                    <center>
-                                        <h3 class="login-heading mb-4">Bienvenido</h3>
-                                    </center>
-                                    <h3 class="login-heading mb-4"> parroquia de nuestra señora de la medalla milagrosa
-                                        del municipio de Santa María Boyacá</h3>
+    <header class="d-flex flex-wrap justify-content-center py-3 pe-5 mb-4 border-bottom me-auto">
+        <%- include('./navegation.ejs') %>
+    </header>
+
+    <div class="container-fluid ps-md-0">
+        <div class="row g-0">
+            <div class="d-none d-md-flex col-md-3 col-lg-5 bg-image"></div>
+            <div class="col-md-3 col-lg-6">
+                <div class="login d-flex align-items-center py-4">
+                    <div class="container">
 
 
-                                </div>
-                            </div>
+                        <div class="col-md-0 col-lg-11 mx-auto" style="background-color: antiquewhite;">
+                            <center>
+                                <h3 class="login-heading mb-4">Bienvenido</h3>
+                            </center>
+
+                            <center><img id="imagen-evento" src="/img/evento.jpg?v=1" class="img-thumbnail"
+                                    alt="no carga">
+                                </center>
                         </div>
+
+                        <div class="collapse" id="collapseContent" data-bs-parent="#collapseContent">
+                            <div class="col-md-0 col-lg-11 mx-auto transicion" style="background-color: antiquewhite;">
+                              <center>
+                                <h3 class="login-heading mb-4">Bienvenido</h3>
+                              </center>
+                              <h3 class="login-heading mb-4">parroquia de nuestra señora de la medalla milagrosa del municipio de Santa María Boyacá</h3>
+                            </div>
+                          </div>
+
+                          <div class="collapse" id="collapseContent2" data-bs-parent="#collapseContent2">
+                            <div class="col-md-0 col-lg-11 mx-auto transicion" style="background-color: antiquewhite;">
+                              <center>
+                                <h3 class="login-heading mb-4">Bienvenido</h3>
+                              </center>
+                              <h3 class="login-heading mb-4">parroquia de nuestra señora de la medalla milagrosa del municipio de Santa María Boyacá</h3>
+                            </div>
+                          </div>
+
+
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <footer>
+        <%-include('./templates/footer.ejs')%>
+    </footer>
+    <script>
+        const collapseContent = document.getElementById('collapseContent');
+        const collapseContent2 = document.getElementById('collapseContent2');
+        const imagen = document.getElementById('imagen-evento');
+    
+        collapseContent.addEventListener('show.bs.collapse', () => {
+            imagen.classList.add('d-none');
+        });
+    
+        collapseContent.addEventListener('hide.bs.collapse', () => {
+            imagen.classList.remove('d-none');
+        });
+    
+        collapseContent2.addEventListener('show.bs.collapse', () => {
+            imagen.classList.add('d-none');
+        });
+    
+        collapseContent2.addEventListener('hide.bs.collapse', () => {
+            imagen.classList.remove('d-none');
+        });
+    </script>
+    
 </body>
 
 </html>
