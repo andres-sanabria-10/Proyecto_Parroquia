@@ -10,41 +10,68 @@
         <%- include('./navegation.ejs') %>
     </header>
 
-    <div class="container-fluid ps-md-0">
+    <div class="container-fluid ">
         <div class="row g-0">
-            <div class="d-none d-md-flex col-md-3 col-lg-5 bg-image"></div>
-            <div class="col-md-3 col-lg-6">
-                <div class="login d-flex align-items-center py-4">
+            <div class="d-none d-md-flex col-md-6 col-lg-5 bg-image"></div>
+            <div class="col-md-6 col-lg-7">
+                <div class="login d-flex align-items-center ">
                     <div class="container">
 
 
-                        <div class="col-md-0 col-lg-11 mx-auto" style="background-color: antiquewhite;">
-                            <center>
-                                <h3 class="login-heading mb-4">Bienvenido</h3>
-                            </center>
+                        <div class="col-md-6 col-lg-11 mx-auto" style="background-color: antiquewhite; " >
+                         
 
-                            <center><img id="imagen-evento" src="/img/evento.jpg?v=1" class="img-thumbnail"
+                            <center><img id="imagen" src="/img/evento.jpg?v=1" class="img-thumbnail"
                                     alt="no carga">
-                                </center>
+                            </center>
                         </div>
 
-                        <div class="collapse" id="collapseContent" data-bs-parent="#collapseContent">
-                            <div class="col-md-0 col-lg-11 mx-auto transicion" style="background-color: antiquewhite;">
-                              <center>
-                                <h3 class="login-heading mb-4">Bienvenido</h3>
-                              </center>
-                              <h3 class="login-heading mb-4">parroquia de nuestra señora de la medalla milagrosa del municipio de Santa María Boyacá</h3>
+                        <div class="collapse" id="collapseContent" >
+                            <div class="col-md-5 col-lg-11 mx-auto " style="background-color: antiquewhite;">
+                                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="/img/bau.png?v=1" class="d-block w-50" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Incripción curso Bautismal</h5>
+                                          <p>Inicion 15/05/2024   Fin: 15/07/2024</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="/img/Matrimonio.png?v=1" class="d-block w-50" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Documentos necesarios para el matrimonio</h5>
+                                          <p>Listado en pdf</p>
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="/img/paloma.png?v=1"" class="d-block w-50" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                          <h5>Incripción curso de Confirmacion</h5>
+                                          <p>Inicion 15/05/2024   Fin: 15/07/2024.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                  
+                                
                             </div>
-                          </div>
+                        </div>
 
-                          <div class="collapse" id="collapseContent2" data-bs-parent="#collapseContent2">
-                            <div class="col-md-0 col-lg-11 mx-auto transicion" style="background-color: antiquewhite;">
-                              <center>
-                                <h3 class="login-heading mb-4">Bienvenido</h3>
-                              </center>
-                              <h3 class="login-heading mb-4">parroquia de nuestra señora de la medalla milagrosa del municipio de Santa María Boyacá</h3>
-                            </div>
-                          </div>
+
 
 
 
@@ -54,30 +81,26 @@
         </div>
     </div>
     <footer>
-        <%-include('./templates/footer.ejs')%>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
     </footer>
     <script>
         const collapseContent = document.getElementById('collapseContent');
-        const collapseContent2 = document.getElementById('collapseContent2');
-        const imagen = document.getElementById('imagen-evento');
+        const imagen = document.getElementById('imagen');
+        const enlaceNoticias = document.querySelector('a[href="#collapseContent"]');
     
         collapseContent.addEventListener('show.bs.collapse', () => {
-            imagen.classList.add('d-none');
+          imagen.classList.add('d-none');
         });
     
         collapseContent.addEventListener('hide.bs.collapse', () => {
-            imagen.classList.remove('d-none');
+          imagen.classList.remove('d-none');
         });
     
-        collapseContent2.addEventListener('show.bs.collapse', () => {
-            imagen.classList.add('d-none');
-        });
-    
-        collapseContent2.addEventListener('hide.bs.collapse', () => {
-            imagen.classList.remove('d-none');
-        });
+        
     </script>
-    
+
 </body>
 
 </html>

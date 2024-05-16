@@ -9,4 +9,7 @@ router.get("/", (req, res) => {
     
   });
 
+  router.get("/noticias", (req, res) => {
+    res.render("noticias.ejs");
+  });
   module.exports = router;
