@@ -12,4 +12,8 @@ router.get("/", (req, res) => {
   router.get("/noticias", (req, res) => {
     res.render("noticias.ejs");
   });
+
+  router.get("/ver", (req, res) => {
+    res.render("Admin.ejs");
+  }); 
   module.exports = router;
