@@ -12,4 +12,11 @@ router.get("/", (req, res) => {
   router.get("/noticias", (req, res) => {
     res.render("noticias.ejs");
   });
+
+  // Redirecciona a la pagina de la secretaria.ejs
+  router.get("/ver", (req, res) => {
+    res.render("secretaria.ejs");
+  });
+
+
   module.exports = router;
