@@ -51,11 +51,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-<<<<<<< HEAD
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
-=======
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -4142,10 +4138,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-<<<<<<< HEAD
   
-=======
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 .navbar-nav .nav-link {
@@ -4444,11 +4437,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-<<<<<<< HEAD
   color:#000;
-=======
-  color: #fff;
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
@@ -9600,11 +9589,7 @@ button.bg-dark:focus {
 }
 
 .text-white {
-<<<<<<< HEAD
   color: #000 !important;
-=======
-  color: #fff !important;
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 .text-primary {
@@ -10316,19 +10301,11 @@ a:focus {
 }
 
 .topbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-<<<<<<< HEAD
   color: #000;
 }
 
 .topbar.navbar-dark .navbar-nav .nav-item .nav-link:active {
   color: #000;
-=======
-  color: #fff;
-}
-
-.topbar.navbar-dark .navbar-nav .nav-item .nav-link:active {
-  color: #fff;
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
@@ -10702,11 +10679,7 @@ a:focus {
 }
 
 .sidebar-dark .sidebar-brand {
-<<<<<<< HEAD
   color: #000;
-=======
-  color: #fff;
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 .sidebar-dark hr.sidebar-divider {
@@ -10726,19 +10699,11 @@ a:focus {
 }
 
 .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {
-<<<<<<< HEAD
   color: #000;
 }
 
 .sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {
   color: #000;
-=======
-  color: #fff;
-}
-
-.sidebar-dark .nav-item .nav-link:active i, .sidebar-dark .nav-item .nav-link:focus i, .sidebar-dark .nav-item .nav-link:hover i {
-  color: #fff;
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -10746,19 +10711,11 @@ a:focus {
 }
 
 .sidebar-dark .nav-item.active .nav-link {
-<<<<<<< HEAD
   color: #000;
 }
 
 .sidebar-dark .nav-item.active .nav-link i {
   color: #000;
-=======
-  color: #fff;
-}
-
-.sidebar-dark .nav-item.active .nav-link i {
-  color: #fff;
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
 }
 
 .sidebar-dark #sidebarToggle {
@@ -10939,11 +10896,7 @@ form.user .btn-user {
 }
 
 .btn-google {
-<<<<<<< HEAD
   color: #000;
-=======
-  color: #fff;
->>>>>>> 92c41566b998f16237451666c44914507fb5f220
   background-color: #ea4335;
   border-color: #fff;
 }
